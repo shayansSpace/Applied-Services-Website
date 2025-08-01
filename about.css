@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .hero video {
+    height: 100vh;
+} */
+
+.about-content {
+    color: #fff;
+    height: 80vh;
+    width: 65vw;
+    /* width: 70vw;/ */
+    background-color: rgba(44, 65, 80, 0.8);
+    z-index: 2;
+    position: absolute;
+    left: 5%;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+.about-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+
+/* section vision */
+
+#section-vision {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mission,
+.vision,
+.goals {
+    height: 230px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 50px; */
+    /* border: 2px solid black; */
+}
+
+.mission p,
+.vision p,
+.goals p {
+    /* display: flex; */
+    text-align: center;
+}
+
+.mission h3,
+.vision h3,
+.goals h3 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    /* text-align: center; */
+}
+
+.svg-icon {
+    height: 180px;
+    width: 130px;
+    fill: rgb(48, 172, 213);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+}
+
+.svg-icon:hover {
+    fill: var(--primary-color);
+}
