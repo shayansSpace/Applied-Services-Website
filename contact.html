@@ -5,17 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Applied Services - All types of solutions</title>
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utils.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <!-- nav -->
     <nav>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
         <div class="logo">
-            <img src="applied logo with text.png" alt="" />
+            <a href="index.html">
+                <img src="applied logo with text.png" alt="" />
+            </a>
         </div>
         <div class="navigation">
+            <input type="checkbox" name="" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i
+        ></label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -42,6 +53,58 @@
             </ul>
         </div>
     </nav>
+    <!-- form section -->
+    <section id="form">
+        <div class="form-content">
+            <div class="form-text">
+                <div class="cred">
+                    <h1>Get in Touch</h1>
+                    <p><i class="fa-solid fa-envelope"></i>email</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>(92-21) 35135036</p>
+                    <p>
+                        <i class="fa-solid fa-address-card"></i>PP/NO.278 S/No. 276-277, Mehmoodabad, Karachi, Pakistan
+                    </p>
+                </div>
+
+                <div class="office">
+                    <div class="head-office">
+                        <h3>Head Office:</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>location</p>
+                        <p><i class="fa-solid fa-person"></i>representative</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>telephone</p>
+                    </div>
+                    <div class="multan-office">
+                        <h3>Multan Office:</h3>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>House No T-22, Street No 01, 1st Floor, New Multan, Multan
+                        </p>
+                        <p><i class="fa-solid fa-person"></i>representative</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>+92-61-6773789</p>
+                    </div>
+                    <div class="islamabad-office">
+                        <h3>Islamabad Office:</h3>
+                        <p><i class="fa-solid fa-location-dot"></i>location</p>
+                        <p><i class="fa-solid fa-person"></i>representative</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>telephone</p>
+                    </div>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xzzvvnwq" method="POST">
+                <h2>Let's Talk</h2>
+                <label>
+            Your email:
+            <input type="email" name="email" />
+          </label>
+                <label>
+            Your message:
+            <textarea name="message"></textarea>
+          </label>
+
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
     <!-- contact section -->
     <section id="section-contact">
         <div class="contact-content">

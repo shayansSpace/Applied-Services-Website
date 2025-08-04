@@ -1,14 +1,171 @@
-@keyframes animate-fade {
-    0% {
-        opacity: 0;
-        scale: 0.5;
+/* mobile */
+
+@media (max-width: 418px) {
+    .hero-content p {
+        font-size: 0.8rem;
     }
-    50% {
-        opacity: 0.5;
-        scale: 0.75;
+    .hero-content h1 {
+        font-size: 1rem;
     }
-    100% {
-        opacity: 1;
-        scale: 1;
+    .quick-links {
+        display: none;
+    }
+    .about-content h1 {
+        font-size: 1.5rem;
+    }
+    .about-content p {
+        font-size: 0.9rem;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 585px) {
+    .contact-logo {
+        display: none;
+    }
+    .p2 p {
+        display: none;
+    }
+    .about-page {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hide the checkbox */
+    #menu-toggle {
+        display: none;
+    }
+    /* Hide navigation ul by default, but keep navigation container visible */
+    .navigation ul {
+        display: none;
+    }
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+        float: right;
+        font-size: 30px;
+        cursor: pointer;
+        color: var(--secondary-color);
+        padding: 20px;
+        z-index: 1001;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    /* Change menu icon color to white when menu is open */
+    #menu-toggle:checked~.menu-icon {
+        color: #fff;
+    }
+    /* Navigation styles when visible */
+    nav .navigation ul {
+        color: #fff;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--primary-color);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        list-style: none;
+        padding-top: 100px;
+        overflow-y: auto;
+    }
+    /* Show navigation when checkbox is checked */
+    #menu-toggle:checked~ul {
+        display: flex !important;
+        left: 0;
+    }
+    /* Style main navigation items */
+    .navigation ul li {
+        width: 90%;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+    }
+    /* Remove underline effect on mobile */
+    .navigation ul li::after {
+        display: none !important;
+    }
+    .navigation ul li a {
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        width: 100%;
+    }
+    .navigation ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ecf0f1;
+    }
+    /* Hide dropdown arrow on mobile */
+    .navigation ul li a .fas {
+        display: none;
+    }
+    /* Dropdown styles for mobile - make it a vertical list */
+    .navigation ul li:hover .dropdown-services {
+        display: block;
+        position: static;
+        background-color: transparent;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .dropdown-services {
+        display: none;
+        position: static !important;
+        background-color: transparent !important;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .dropdown-services ul {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        position: static !important;
+        padding: 10px 0 !important;
+        border-radius: 8px;
+        margin-top: 10px;
+        width: 100%;
+        flex-direction: column;
+        display: flex !important;
+    }
+    .dropdown-services ul li {
+        width: 100% !important;
+        margin: 5px 0 !important;
+        padding: 0 15px;
+    }
+    .dropdown-services ul li a {
+        font-size: 1.1rem !important;
+        padding: 12px 15px !important;
+        color: #ecf0f1 !important;
+        background-color: transparent;
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+    .dropdown-services ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        /* border-left-color: #ecf0f1; */
+        transform: translateX(5px);
+    }
+    /* Make services dropdown always visible on mobile */
+    .navigation ul li .dropdown-services {
+        display: block !important;
+    }
+    /* Other existing styles */
+    .contact-logo img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+    .hero-content p {
+        font-size: 1.4rem;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
     }
 }

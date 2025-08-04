@@ -11,7 +11,7 @@
 
 .about-content {
     color: #fff;
-    height: 80vh;
+    min-height: 50vh;
     width: 65vw;
     /* width: 70vw;/ */
     background-color: rgba(44, 65, 80, 0.8);
