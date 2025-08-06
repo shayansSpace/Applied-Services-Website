@@ -1,6 +1,10 @@
 /* mobile */
 
 @media (max-width: 418px) {
+    .img-about {
+        height: 420px;
+        width: 260px;
+    }
     .hero-content p {
         font-size: 0.8rem;
     }
@@ -54,7 +58,10 @@
     }
     /* Change menu icon color to white when menu is open */
     #menu-toggle:checked~.menu-icon {
-        color: #fff;
+        color: #fff !important;
+    }
+    #menu-toggle:checked~.menu-icon i {
+        color: #fff !important;
     }
     /* Navigation styles when visible */
     nav .navigation ul {
@@ -67,7 +74,7 @@
         top: 0;
         left: -100%;
         width: 100%;
-        height: 100vh;
+        max-height: 100vh;
         background-color: var(--primary-color);
         transition: left 0.3s ease;
         z-index: 1000;

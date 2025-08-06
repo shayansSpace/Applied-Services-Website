@@ -697,6 +697,7 @@ nav .logo {
 }
 
 .fa-solid {
+    color: var(--primary-color);
     font-size: 1rem;
     padding-right: 30px;
 }
@@ -755,5 +756,5 @@ nav .logo {
 }
 
 .fa-solid {
-    color: #66aaee;
+    color: var(--primary-color);
 }
