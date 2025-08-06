@@ -70,8 +70,8 @@ nav ul li a:hover {
 }
 
 nav .logo {
-    height: 180px;
-    width: 180px;
+    height: 70px;
+    width: 290px;
     position: relative;
     top: 5px;
     cursor: pointer;
@@ -317,11 +317,12 @@ nav .logo {
 }
 
 .img-about {
-    height: 650px;
-    width: 220px;
+    height: 535px;
+    width: 280px;
     position: absolute;
-    left: -80px;
-    opacity: 0.8;
+    left: -130px;
+    /* opacity: 0.8; */
+    /* margin-left: 50px;
     /* margin-left: 50px; */
 }
 
@@ -566,7 +567,6 @@ nav .logo {
 .contact-logo {
     height: 450px;
     width: 250px;
-    /* background-color: var(--primary-color); */
 }
 
 .contact-logo img {
@@ -654,9 +654,6 @@ nav .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-width: 100vw; */
-    /* align-items: center; */
-    /* padding: 100px 20px 50px; */
 }
 
 .form-content {
@@ -665,31 +662,14 @@ nav .logo {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 80px 0px;
-    /* align-items: center; */
-    /* width: 100%; */
-    /* max-width: 600px; */
-    /* z-index: 2; */
 }
 
 .form-text {
-    /* height: 80vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10vh;
-    /* line-height: 2; */
-    /* padding-left: 10px; */
 }
-
-
-/* .cred p {
-    padding-left: 50px;
-} */
-
-
-/* .cred {
-    line-height: 40px;
-} */
 
 .cred h1 {
     font-size: 5rem;
@@ -700,8 +680,10 @@ nav .logo {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.5;
-    /* padding-left: 10px; */
-    /* margin-top: 20px; */
+}
+
+.office {
+    line-height: 2;
 }
 
 .office h3 {
@@ -724,12 +706,9 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* padding-top: 20px; */
-    /* line-height: 50px; */
 }
 
 .form-content form h2 {
-    /* padding-top: 20px; */
     font-size: 4rem;
     color: #66aaee;
 }
@@ -753,21 +732,7 @@ nav .logo {
     transition: border-color 0.3s ease;
 }
 
-
-/* .form-content form input:focus,
-.form-content form textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-} */
-
-
-/* .form-content form textarea {
-    height: 120px;
-    resize: vertical;
-} */
-
 .form-content form button {
-    /* font-family: var(--urbanist-main); */
     font-size: 1rem;
     font-weight: 600;
     height: 40px;
@@ -779,7 +744,6 @@ nav .logo {
     display: flex;
     align-items: center;
     position: relative;
-    /* top: 20px; */
     justify-content: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -788,4 +752,8 @@ nav .logo {
 .form-content form button:hover {
     background-color: #34495e;
     color: #fff;
+}
+
+.fa-solid {
+    color: #66aaee;
 }
