@@ -677,9 +677,9 @@ nav .logo {
 }
 
 .cred p {
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 2.5;
 }
 
 .office {
@@ -691,8 +691,8 @@ nav .logo {
 }
 
 .office p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 2.5;
     font-weight: 500;
 }
 
@@ -739,7 +739,7 @@ nav .logo {
     width: 100px;
     color: black;
     background-color: #fff;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -750,7 +750,7 @@ nav .logo {
 }
 
 .form-content form button:hover {
-    background-color: #34495e;
+    background-color: #66aaee;
     color: #fff;
 }
 
