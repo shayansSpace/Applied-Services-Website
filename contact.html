@@ -8,6 +8,8 @@
     <!-- Standard favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utils.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -53,99 +55,118 @@
             </ul>
         </div>
     </nav>
-    <!-- form section -->
-    <section id="form">
-        <div class="form-content">
-            <div class="form-text">
-                <div class="cred">
-                    <h1>Get in Touch</h1>
-                    <p><i class="fa-solid fa-envelope color"></i>email</p>
-                    <p><i class="fa-solid fa-phone-volume color"></i>(92-21) 35135036</p>
-                    <p>
-                        <i class="fa-solid fa-address-card color"></i>PP/NO.278 S/No. 276-277, Mehmoodabad, Karachi, Pakistan
-                    </p>
-                </div>
-
-                <div class="office">
-                    <div class="head-office">
-                        <h3>Head Office:</h3>
-                        <p><i class="fa-solid fa-location-dot color"></i>PP/NO.278 S/No. 276-277, Mehmoodabad, Karachi, Pakistan</p>
-                        <p><i class="fa-solid fa-phone-volume color"></i>(92-21) 35135036</p>
-                    </div>
-                    <div class="multan-office">
-                        <h3>Multan Office:</h3>
+    <div id="main">
+        <!-- form section -->
+        <section id="form">
+            <div class="form-content">
+                <div class="form-text">
+                    <div class="cred">
+                        <h1>Get in Touch</h1>
                         <p>
-                            <i class="fa-solid fa-location-dot color"></i>House No T-22, Street No 01, 1st Floor, New Multan, Multan
+                            <i class="fa-solid fa-envelope color"></i
+                >info@appliedservices.com.pk
+              </p>
+              <p>
+                <i class="fa-solid fa-phone-volume color"></i>(92-21) 35135036
                         </p>
-                        <p><i class="fa-solid fa-phone-volume color"></i>+92-61-6773789</p>
+                        <p>
+                            <i class="fa-solid fa-address-card color"></i>PP/NO.278 S/No. 276-277, Mehmoodabad, Karachi, Pakistan
+                        </p>
                     </div>
-                    <div class="islamabad-office">
-                        <h3>Islamabad Office:</h3>
-                        <p><i class="fa-solid fa-location-dot color"></i>Near Masjid Ameer e Hamza St# 6/3, <br> Ghori VIP Khana Dak, Abdullah Plaza, Islamabad</p>
-                        <p><i class="fa-solid fa-phone-volume color"></i>telephone</p>
-                    </div>
-                </div>
-            </div>
-            <form action="https://formspree.io/f/xzzvvnwq" method="POST">
-                <h2>Let's Talk</h2>
-                <label>
-            Your email:
-            <input type="email" name="email" />
-          </label>
-                <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
 
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-    <!-- contact section -->
-    <section id="section-contact">
-        <div class="contact-content">
-            <div class="contact-logo">
-                <img src="applied logo.png" alt="" />
+                    <div class="office">
+                        <div class="head-office">
+                            <h3>Head Office:</h3>
+                            <p>
+                                <i class="fa-solid fa-location-dot color"></i>PP/NO.278 S/No. 276-277, Mehmoodabad, Karachi, Pakistan
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone-volume color"></i>(92-21) 35135036
+                            </p>
+                        </div>
+                        <div class="multan-office">
+                            <h3>Multan Office:</h3>
+                            <p>
+                                <i class="fa-solid fa-location-dot color"></i>House No T-22, Street No 01, 1st Floor, New Multan, Multan
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-phone-volume color"></i>+92-61-6773789
+                            </p>
+                        </div>
+                        <div class="islamabad-office">
+                            <h3>Islamabad Office:</h3>
+                            <p>
+                                <i class="fa-solid fa-location-dot color"></i>Abdullah Plaza, Near Masjid Ameer e Hamza, St# 6/3, Ghori VIP Khana Dak, Islamabad
+                            </p>
+                            <p><i class="fa-solid fa-phone-volume color"></i>telephone</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/xzzvvnwq" method="POST">
+                    <h2>Let's Talk</h2>
+                    <label>
+              Your email:
+              <input type="email" name="email" />
+            </label>
+                    <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+
+                    <!-- your other form fields go here -->
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <div class="contact-us">
-                <h4>Contact Us</h4>
-                <p>021-35391515</p>
-                <br />
-                <div class="address-openhours">
-                    <span id="real-address">
-              <h4>Address</h4>
-              <p>
-                House No 22, Street No. 1, T Block New Multan, Multan Cantt.,
-                Pakistan
-              </p>
-            </span>
-                    <span id="real-openhours">
-              <h4>Open Hours</h4>
-              <p>
-                Monday to Saturday: 9 AM - 5 PM
-                <br />
-                Sunday: Closed
-              </p>
-            </span>
+        </section>
+        <!-- contact section -->
+        <section id="section-contact">
+            <div class="contact-content">
+                <div class="contact-logo">
+                    <img src="applied logo.png" alt="" />
+                </div>
+                <div class="contact-us">
+                    <h4>Contact Us</h4>
+                    <p>021-35391515</p>
+                    <br />
+                    <div class="address-openhours">
+                        <span id="real-address">
+                <h4>Address</h4>
+                <p>
+                  House No 22, Street No. 1, T Block New Multan, Multan Cantt.,
+                  Pakistan
+                </p>
+              </span>
+                        <span id="real-openhours">
+                <h4>Open Hours</h4>
+                <p>
+                  Monday to Saturday: 9 AM - 5 PM
+                  <br />
+                  Sunday: Closed
+                </p>
+              </span>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <p>Quick Links</p>
+                    <a href="services/calibration.html">Calibration</a>
+                    <a href="services/maintenance.html">Maintenance</a>
+                    <a href="services/civil_work.html">Civil Work</a>
+                    <a href="services/fire_safety.html">Fire Safety</a>
+                    <a href="services/tank_cleaning.html">Tank Cleaning</a>
+                    <a href="services/inspection.html">Inspection</a>
+                    <a href="services/equipment_supply.html">Equipment Supply</a>
                 </div>
             </div>
-            <div class="quick-links">
-                <p>Quick Links</p>
-                <a href="services/calibration.html">Calibration</a>
-                <a href="services/maintenance.html">Maintenance</a>
-                <a href="services/civil_work.html">Civil Work</a>
-                <a href="services/fire_safety.html">Fire Safety</a>
-                <a href="services/tank_cleaning.html">Tank Cleaning</a>
-                <a href="services/inspection.html">Inspection</a>
-                <a href="services/equipment_supply.html">Equipment Supply</a>
+        </section>
+        <footer>
+            <div class="copyright">
+                <p>Copyright © 2025 Applied Services – All Rights Reserved.</p>
+                <p>Designed & Developed by PulseUp Digital</p>
             </div>
-        </div>
-        <div class="copyright">
-            <p>Designed & Developed by PulseUp Digital</p>
-        </div>
-    </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>

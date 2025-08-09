@@ -117,19 +117,16 @@
         display: none;
     }
     /* Dropdown styles for mobile - make it a vertical list */
-    .navigation ul li:hover .dropdown-services {
-        display: block;
-        position: static;
-        background-color: transparent;
-        margin-top: 10px;
-        width: 100%;
-    }
     .dropdown-services {
         display: none;
         position: static !important;
         background-color: transparent !important;
         margin-top: 10px;
         width: 100%;
+    }
+    /* Show dropdown when toggled via JavaScript */
+    .dropdown-services.show {
+        display: block !important;
     }
     .dropdown-services ul {
         background-color: rgba(255, 255, 255, 0.05) !important;

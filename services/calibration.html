@@ -8,6 +8,7 @@
     <!-- Standard favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="css/calib.css" />
     <link rel="stylesheet" href="../utils.css" />
@@ -29,8 +30,9 @@
                 </a>
             </div>
             <div class="navigation">
-                <input type="checkbox" name="" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" name="" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i
+          ></label>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../about.html">About</a></li>
@@ -39,10 +41,9 @@
                         <div class="dropdown-services">
                             <ul>
                                 <li>
-                                    <a id="anchor" href="calibration.html">Calibration</a
-                  >
-                </li>
-                <li><a href="maintenance.html">Maintenance</a></li>
+                                    <a id="anchor" href="calibration.html">Calibration</a>
+                                </li>
+                                <li><a href="maintenance.html">Maintenance</a></li>
                                 <li><a href="civil_work.html">Civil Work</a></li>
                                 <li><a href="fire_safety.html">Fire Safety</a></li>
                                 <li><a href="tank_cleaning.html">Tank Cleaning</a></li>
@@ -58,91 +59,98 @@
             </div>
         </nav>
     </section>
-    <!-- calib-section -->
-    <section id="section-calibration">
-        <div class="service-img">
-            <div class="overlay"></div>
-            <h2>Calibration Services</h2>
-            <img src="calib-img/calibration-img.jpg" alt="Calibration" />
-        </div>
-        <div class="service-desc">
-            <p>
-                Instrument calibration is the process of configuring and verifying measuring instruments to ensure their accuracy and precision against established standards. It is essential for maintaining data integrity, meeting regulatory compliance, and ensuring
-                safety in critical operations. We provide expert calibration services for a wide range of instruments including storage tanks, prover tanks, tank lorries, laboratory tools, and more. Using certified equipment and skilled technicians, we
-                ensure every instrument performs within acceptable tolerances, minimizing errors and maximizing operational efficiency. Regular calibration enhances reliability, reduces downtime, and supports consistent performance across industries.
-            </p>
-        </div>
-        <div class="type-service">
-            <div class="box">
-                <img src="calib-img/pressure guage.jpg" alt="" />
-                <div class="box-overlay"></div>
-                <div id="show-desc">Pressure Guage</div>
+    <div id="main">
+        <!-- calib-section -->
+        <section id="section-calibration">
+            <div class="service-img">
+                <div class="overlay"></div>
+                <h2>Calibration Services</h2>
+                <img src="calib-img/calibration-img.jpg" alt="Calibration" />
             </div>
-            <div class="box">
-                <img src="calib-img/prover tank.jpeg" alt="Prover Tank" />
-                <div class="box-overlay"></div>
-                <div id="show-desc">Prover Tank</div>
+            <div class="service-desc">
+                <p>
+                    Instrument calibration is the process of configuring and verifying measuring instruments to ensure their accuracy and precision against established standards. It is essential for maintaining data integrity, meeting regulatory compliance, and ensuring
+                    safety in critical operations. We provide expert calibration services for a wide range of instruments including storage tanks, prover tanks, tank lorries, laboratory tools, and more. Using certified equipment and skilled technicians,
+                    we ensure every instrument performs within acceptable tolerances, minimizing errors and maximizing operational efficiency. Regular calibration enhances reliability, reduces downtime, and supports consistent performance across industries.
+                </p>
             </div>
-            <div class="box">
-                <img src="calib-img/tank lorry.jpg" alt="Tank Lorries" />
-                <div class="box-overlay"></div>
-                <div id="show-desc">Tank Lorries</div>
-            </div>
-            <div class="box">
-                <img src="calib-img/lab tools.jpg" alt="Lab Tools" />
-                <div class="box-overlay"></div>
-                <div id="show-desc">Lab Tools</div>
-            </div>
-            <div class="box">
-                <img src="calib-img/storage tank.jpg" alt="Storage Tank" />
-                <div class="box-overlay"></div>
-                <div id="show-desc">Storage Tank</div>
-            </div>
-        </div>
-    </section>
-    <!-- contact section -->
-    <section id="section-contact">
-        <div class="contact-content">
-            <div class="contact-logo">
-                <img src="../applied logo.png" alt="">
-            </div>
-            <div class="contact-us">
-                <h4>Contact Us</h4>
-                <p>021-35391515</p>
-                <br />
-                <div class="address-openhours">
-                    <span id="real-address">
-                      <h4>Address</h4>
-                      <p>
-                        House No 22, Street No. 1, T Block New Multan, Multan Cantt., Pakistan
-                      </p>
-                    </span>
-                    <span id="real-openhours">
-                      <h4>Open Hours</h4>
-                      <p>
-                        Monday to Saturday: 9 AM - 5 PM
-                        <br />
-                        Sunday: Closed
-                      </p>
-                    </span>
+            <div class="type-service">
+                <div class="box">
+                    <img src="calib-img/pressure guage.jpg" alt="" />
+                    <div class="box-overlay"></div>
+                    <div id="show-desc">Pressure Guage</div>
+                </div>
+                <div class="box">
+                    <img src="calib-img/prover tank.jpeg" alt="Prover Tank" />
+                    <div class="box-overlay"></div>
+                    <div id="show-desc">Prover Tank</div>
+                </div>
+                <div class="box">
+                    <img src="calib-img/tank lorry.jpg" alt="Tank Lorries" />
+                    <div class="box-overlay"></div>
+                    <div id="show-desc">Tank Lorries</div>
+                </div>
+                <div class="box">
+                    <img src="calib-img/lab tools.jpg" alt="Lab Tools" />
+                    <div class="box-overlay"></div>
+                    <div id="show-desc">Lab Tools</div>
+                </div>
+                <div class="box">
+                    <img src="calib-img/storage tank.jpg" alt="Storage Tank" />
+                    <div class="box-overlay"></div>
+                    <div id="show-desc">Storage Tank</div>
                 </div>
             </div>
-            <div class="quick-links">
-                <p>Quick Links</p>
-                <a href="calibration.html">Calibration</a>
-                <a href="maintenance.html">Maintenance</a>
-                <a href="civil_work.html">Civil Work</a>
-                <a href="fire_safety.html">Fire Safety</a>
-                <a href="tank_cleaning.html">Tank Cleaning</a>
-                <a href="inspection.html">Inspection</a>
-                <a href="equipment_supply.html">Equipment Supply</a>
+        </section>
+        <!-- contact section -->
+        <section id="section-contact">
+            <div class="contact-content">
+                <div class="contact-logo">
+                    <img src="../applied logo.png" alt="" />
+                </div>
+                <div class="contact-us">
+                    <h4>Contact Us</h4>
+                    <p>021-35391515</p>
+                    <br />
+                    <div class="address-openhours">
+                        <span id="real-address">
+                <h4>Address</h4>
+                <p>
+                  House No 22, Street No. 1, T Block New Multan, Multan Cantt.,
+                  Pakistan
+                </p>
+              </span>
+                        <span id="real-openhours">
+                <h4>Open Hours</h4>
+                <p>
+                  Monday to Saturday: 9 AM - 5 PM
+                  <br />
+                  Sunday: Closed
+                </p>
+              </span>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <p>Quick Links</p>
+                    <a href="calibration.html">Calibration</a>
+                    <a href="maintenance.html">Maintenance</a>
+                    <a href="civil_work.html">Civil Work</a>
+                    <a href="fire_safety.html">Fire Safety</a>
+                    <a href="tank_cleaning.html">Tank Cleaning</a>
+                    <a href="inspection.html">Inspection</a>
+                    <a href="equipment_supply.html">Equipment Supply</a>
+                </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>Designed & Developed by PulseUp Digital</p>
-        </div>
-    </section>
+        </section>
+        <footer>
+            <div class="copyright">
+                <p>Copyright © 2025 Applied Services – All Rights Reserved.</p>
+                <p>Designed & Developed by PulseUp Digital</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="../script.js"></script>
 </body>
-<script src="../script.js"></script>
 
 </html>
