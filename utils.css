@@ -36,6 +36,9 @@
 }
 
 @media (max-width: 768px) {
+    .copyright {
+        font-size: 0.8rem;
+    }
     /* Hide the checkbox */
     #menu-toggle {
         display: none;
