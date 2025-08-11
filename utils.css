@@ -166,6 +166,9 @@
         height: 60%;
         object-fit: cover;
     }
+    .hero-content {
+        flex-direction: column;
+    }
     .hero-content p {
         font-size: 1.4rem;
     }
